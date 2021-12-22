@@ -67,7 +67,7 @@ const StyledCard = styled.div<Props>`
   }
 `;
 
-export const Card = ({ project, layout }: Props) => {
+export const Card: React.FC<Props> = ({ project, layout }: Props) => {
   return (
     <StyledCard layout={layout} project={project}>
       <div>

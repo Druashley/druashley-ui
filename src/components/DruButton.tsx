@@ -30,7 +30,7 @@ const StyledDruButton = styled.button<DruButtonProps>`
   }
 `;
 
-export const DruButton = ({
+export const DruButton: React.FC<DruButtonProps> = ({
   label,
   background,
   color,

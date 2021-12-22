@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import styled from "styled-components";
 import { BubbleChart } from "reaviz";
 
@@ -33,6 +33,10 @@ const StyledCard = styled.div<Props>`
   max-width: 1000px;
   flex-direction: ${(props) => props.layout};
 
+  h2 {
+    font-size: 2em;
+  }
+
   h3 {
     text-align: center;
   }
@@ -64,6 +68,10 @@ const StyledCard = styled.div<Props>`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    p {
+      text-align: left;
+    }
   }
 `;
 

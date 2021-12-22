@@ -7,7 +7,7 @@ export default {
   title: "Dru/Button",
   component: DruButton,
   argTypes: {
-    backgroundColor: {
+    background: {
       control: "radio",
       options: ["#D1E8E4", "#C37B89", "#BCCC9A", "#EAE7C6"],
     },

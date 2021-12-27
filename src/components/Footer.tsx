@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { Container } from "./styles/Container.styled";
 import { Flex } from "./styles/Flex.styled";
+import { StyledLogo } from "./styles/Logo.styled";
 
 const StyledFooter = styled.footer`
   background-color: #975d69;
   color: #fff;
   padding: 5rem 0 3rem;
+  line-height: 1;
 
   ul {
     list-style-type: none;
@@ -49,6 +51,10 @@ const StyledFooter = styled.footer`
       transform: rotate(-15deg);
     }
   }
+  .icon {
+    font-size: 2.5rem;
+    margin: 0;
+  }
 `;
 
 export const Footer: React.FC = () => {
@@ -57,7 +63,9 @@ export const Footer: React.FC = () => {
       <Container>
         <Flex>
           <ul>
-            <li>Druashley - A frontend web developer</li>
+            <li>
+              <StyledLogo>Druashley</StyledLogo>
+            </li>
             <li>
               <a
                 href="https://twitter.com/Dru_ashley"
@@ -78,7 +86,7 @@ export const Footer: React.FC = () => {
               </a>
             </li>
             <li>
-              <p>👋</p>
+              <p className="icon">🦆</p>
             </li>
           </ul>
         </Flex>

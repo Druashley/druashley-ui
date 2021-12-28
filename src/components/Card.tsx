@@ -91,7 +91,7 @@ export const Card: React.FC<Props> = ({ project, layout }: Props) => {
         <p>{project.description}</p>
       </div>
       <div className="tech-container">
-        <h3>Highlighted Tech</h3>
+        <h2>Highlighted Tech</h2>
         <BubbleChart height={400} width={400} data={project.technologies} />
       </div>
     </StyledCard>
